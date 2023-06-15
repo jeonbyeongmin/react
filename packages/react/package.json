@@ -1,0 +1,12 @@
+{
+  "name": "@jeonbyeongmin/react",
+  "version": "0.1.0",
+  "sideEffects": false,
+  "packageManager": "yarn@3.5.1",
+  "devDependencies": {
+    "@types/react": "^18.2.12",
+    "@types/react-dom": "^18.2.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

@@ -1,24 +1,24 @@
 {
-  "name": "react",
-  "packageManager": "yarn@3.5.1",
+  "name": "jeonbyeongmin-js-utils",
   "license": "MIT",
-  "devDependencies": {
-    "@jeonbyeongmin/prettier-config": "^0.1.2",
-    "@types/jest": "^29.5.2",
-    "@types/node": "^20.2.6",
-    "@types/react": "^18.2.10",
-    "@types/react-dom": "^18.2.4",
-    "eslint": "^8.42.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "prettier": "^2.8.8",
-    "typescript": "^5.1.3"
-  },
   "scripts": {
     "sort": "npx sort-package-json"
   },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@jeonbyeongmin/eslint-config": "^0.1.6",
+    "@jeonbyeongmin/prettier-config": "^0.1.2",
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.2.6",
+    "eslint": "^8.42.0",
+    "lerna": "^7.0.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.1.3"
+  },
+  "packageManager": "yarn@3.5.1",
   "publishConfig": {
     "access": "public"
   }
