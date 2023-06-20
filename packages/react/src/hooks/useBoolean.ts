@@ -1,1 +1,3 @@
-export function useBoolean() {}
+export function useBoolean() {
+  return false;
+}

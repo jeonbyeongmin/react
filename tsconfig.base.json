@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    // Type Checking
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+
+    // Module
+    "baseUrl": ".",
+    "module": "esnext",
+    "paths": {
+      "@jeonbyeongmin/react": ["packages/react/src"]
+      //   "@jeonbyeongmin/utils": ["packages/utils/src"],
+    },
+
+    // Emit
+    "declaration": true,
+    "declarationMap": true,
+    "emitDeclarationOnly": true,
+    "removeComments": false,
+
+    // JavaScript Support
+    "allowJs": false,
+
+    // Interop Constraints
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    // Language and Environment
+    "jsx": "react",
+    "lib": ["DOM", "DOM.Iterable", "ES2020"],
+    "target": "ES6",
+
+    // Completeness
+    "skipLibCheck": true
+  },
+  "include": ["packages"]
+}
