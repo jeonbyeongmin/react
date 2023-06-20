@@ -40,6 +40,5 @@
 
     // Completeness
     "skipLibCheck": true
-  },
-  "include": ["packages"]
+  }
 }
