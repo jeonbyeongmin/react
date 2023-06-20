@@ -8,6 +8,8 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
     "@jeonbyeongmin/eslint-config": "^0.1.6",
     "@jeonbyeongmin/prettier-config": "^0.1.2",
     "@rushstack/eslint-patch": "^1.3.2",
