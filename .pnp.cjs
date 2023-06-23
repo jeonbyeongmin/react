@@ -2736,10 +2736,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/react/",\
           "packageDependencies": [\
             ["@jeonbyeongmin/react", "workspace:packages/react"],\
-            ["@types/react", "npm:18.2.12"],\
-            ["@types/react-dom", "npm:18.2.5"],\
+            ["@types/react", "npm:18.2.13"],\
+            ["@types/react-dom", "npm:18.2.6"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:52ae79f794a97a9c228989373a1cfefce77cbcc94a13c6399f400f4674b2601b8bfd0f83398ac26050a6d5d91cb3aeaec7f11cb5ca9ebcfb38d6914361781b1f#npm:18.2.0"]\
+            ["react-dom", "virtual:52ae79f794a97a9c228989373a1cfefce77cbcc94a13c6399f400f4674b2601b8bfd0f83398ac26050a6d5d91cb3aeaec7f11cb5ca9ebcfb38d6914361781b1f#npm:18.2.0"],\
+            ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=77c9e2"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -3534,13 +3535,23 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["csstype", "npm:3.1.2"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:18.2.13", {\
+          "packageLocation": "./.yarn/cache/@types-react-npm-18.2.13-f7110efddb-f7c15f19c1.zip/node_modules/@types/react/",\
+          "packageDependencies": [\
+            ["@types/react", "npm:18.2.13"],\
+            ["@types/prop-types", "npm:15.7.5"],\
+            ["@types/scheduler", "npm:0.16.3"],\
+            ["csstype", "npm:3.1.2"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@types/react-dom", [\
-        ["npm:18.2.5", {\
-          "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.2.5-994872ac5e-c48209f8c6.zip/node_modules/@types/react-dom/",\
+        ["npm:18.2.6", {\
+          "packageLocation": "./.yarn/cache/@types-react-dom-npm-18.2.6-7f191ee628-b56e42efab.zip/node_modules/@types/react-dom/",\
           "packageDependencies": [\
-            ["@types/react-dom", "npm:18.2.5"],\
+            ["@types/react-dom", "npm:18.2.6"],\
             ["@types/react", "npm:18.2.12"]\
           ],\
           "linkType": "HARD"\
@@ -9052,7 +9063,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/react-dom-virtual-cd1aa67022/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
           "packageDependencies": [\
             ["react-dom", "virtual:52ae79f794a97a9c228989373a1cfefce77cbcc94a13c6399f400f4674b2601b8bfd0f83398ac26050a6d5d91cb3aeaec7f11cb5ca9ebcfb38d6914361781b1f#npm:18.2.0"],\
-            ["@types/react", "npm:18.2.12"],\
+            ["@types/react", "npm:18.2.13"],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
             ["scheduler", "npm:0.23.0"]\
