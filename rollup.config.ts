@@ -4,22 +4,43 @@ import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
 
+/**
+ * config
+ */
+
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 const configs: RollupOptions[] = [
   ...generateConfig({
-    packageDir: '.',
+    packageDir: 'packages/react',
+    entry: 'src/index.ts',
   }),
 ];
 
-type GenerateConfigOptions = {
+export default configs;
+
+/**
+ * helpers
+ */
+
+type Options = {
   packageDir: string;
+  entry: string | string[];
 };
 
-function generateConfig(opts: GenerateConfigOptions) {
-  return [
-    {
-      input: `${opts.packageDir}/src/index.ts`,
+function generateBuilder(format: 'cjs' | 'esm'): (opts: Options) => RollupOptions {
+  return (opts: Options) => {
+    const entries = Array.isArray(opts.entry) ? opts.entry : [opts.entry];
+    const input = entries.map(entry => `${opts.packageDir}/${entry}`);
+
+    return {
+      input,
+      output: {
+        dir: `${opts.packageDir}/${format}`,
+        format,
+        exports: 'named',
+        sourcemap: true,
+      },
       plugins: [
         resolve({
           extensions,
@@ -31,8 +52,13 @@ function generateConfig(opts: GenerateConfigOptions) {
           exclude: 'node_modules/**',
         }),
       ],
-    },
-  ];
+    };
+  };
 }
 
-export default configs;
+const buildCJS = generateBuilder('cjs');
+const buildESM = generateBuilder('esm');
+
+function generateConfig(opts: Options) {
+  return [buildCJS(opts), buildESM(opts)];
+}
