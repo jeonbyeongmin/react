@@ -15,7 +15,7 @@
     // Module
     "baseUrl": ".",
     "module": "ES2020",
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "paths": {
       "@jeonbyeongmin/react": ["packages/react/src"]
       //   "@jeonbyeongmin/utils": ["packages/utils/src"],

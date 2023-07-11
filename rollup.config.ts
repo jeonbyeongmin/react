@@ -1,8 +1,9 @@
-import type { ModuleFormat, RollupOptions } from 'rollup';
+import type { ModuleFormat, OutputOptions, RollupOptions } from 'rollup';
 
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
+import path from 'path';
 
 /**
  * config
@@ -11,7 +12,8 @@ import resolve from '@rollup/plugin-node-resolve';
 const configs: RollupOptions[] = [
   ...generateRollupConfig({
     packageDir: 'packages/react',
-    entry: 'src/index.ts',
+    entry: ['src/hooks/index.ts'],
+    external: ['react', 'react-dom'],
   }),
 ];
 
@@ -27,22 +29,30 @@ type Options = {
   external?: string[];
 };
 
-const extensions = ['.js', '.jsx', '.ts', '.tsx'];
-
 function generateBuilder(format: ModuleFormat): (opts: Options) => RollupOptions {
+  const extensions = ['.js', '.jsx', '.ts', '.tsx'];
+
   return (opts: Options) => {
+    // input
     const entries = Array.isArray(opts.entry) ? opts.entry : [opts.entry];
-    const input = entries.map(entry => `${opts.packageDir}/${entry}`);
-    const outputFile = `${opts.packageDir}/build/${format}/index.${format}.js}}`;
+    const input = entries.map(entry => path.resolve(opts.packageDir, entry));
+
+    // output
+    const extension = format === 'esm' ? 'mjs' : 'js';
+    const outputFile = `${opts.packageDir}/build/lib/index.${extension}`;
+    const output: OutputOptions = {
+      format,
+      file: outputFile,
+      exports: 'named',
+      sourcemap: true,
+    };
+
+    // external
+    const external = opts.external || [];
 
     return {
       input,
-      output: {
-        format,
-        file: `${opts.packageDir}/build/${format}/index.js`,
-        exports: 'named',
-        sourcemap: true,
-      },
+      output,
       plugins: [
         resolve({
           extensions,
@@ -54,14 +64,14 @@ function generateBuilder(format: ModuleFormat): (opts: Options) => RollupOptions
           exclude: 'node_modules/**',
         }),
       ],
-      external: opts.external,
+      external,
     };
   };
 }
 
-const buildCJS = generateBuilder('cjs');
-const buildESM = generateBuilder('esm');
-
 function generateRollupConfig(opts: Options) {
+  const buildCJS = generateBuilder('cjs');
+  const buildESM = generateBuilder('esm');
+
   return [buildCJS(opts), buildESM(opts)];
 }

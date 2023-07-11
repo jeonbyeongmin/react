@@ -1,4 +1,8 @@
 {
   "files": [],
+  "include": ["rollup.config.ts"],
+  "compilerOptions": {
+    "esModuleInterop": true
+  },
   "references": [{ "path": "packages/react" }]
 }

@@ -42,13 +42,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@rollup/plugin-babel", "virtual:564722a901df1bff0fda97a09f3c474be5a774a194306bf86bfb0451b16f089a7a31c19ba8e507ba7df4eb77823a70b9b53e173bd7ff61b123501e28403f99c3#npm:6.0.3"],\
             ["@rollup/plugin-commonjs", "virtual:564722a901df1bff0fda97a09f3c474be5a774a194306bf86bfb0451b16f089a7a31c19ba8e507ba7df4eb77823a70b9b53e173bd7ff61b123501e28403f99c3#npm:25.0.2"],\
             ["@rollup/plugin-node-resolve", "virtual:564722a901df1bff0fda97a09f3c474be5a774a194306bf86bfb0451b16f089a7a31c19ba8e507ba7df4eb77823a70b9b53e173bd7ff61b123501e28403f99c3#npm:15.1.0"],\
+            ["@rollup/plugin-typescript", "virtual:564722a901df1bff0fda97a09f3c474be5a774a194306bf86bfb0451b16f089a7a31c19ba8e507ba7df4eb77823a70b9b53e173bd7ff61b123501e28403f99c3#npm:11.1.2"],\
             ["@rushstack/eslint-patch", "npm:1.3.2"],\
             ["@types/jest", "npm:29.5.2"],\
             ["@types/node", "npm:20.2.6"],\
             ["eslint", "npm:8.42.0"],\
             ["lerna", "npm:7.0.1"],\
             ["prettier", "npm:2.8.8"],\
-            ["rollup", "npm:3.25.3"],\
+            ["rollup", "npm:3.26.2"],\
+            ["tslib", "npm:2.6.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=289587"]\
           ],\
           "linkType": "SOFT"\
@@ -2740,11 +2742,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/react/",\
           "packageDependencies": [\
             ["@jeonbyeongmin/react", "workspace:packages/react"],\
-            ["@types/react", "npm:18.2.13"],\
+            ["@types/react", "npm:18.2.14"],\
             ["@types/react-dom", "npm:18.2.6"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:52ae79f794a97a9c228989373a1cfefce77cbcc94a13c6399f400f4674b2601b8bfd0f83398ac26050a6d5d91cb3aeaec7f11cb5ca9ebcfb38d6914361781b1f#npm:18.2.0"],\
-            ["typescript", "patch:typescript@npm%3A5.1.3#~builtin<compat/typescript>::version=5.1.3&hash=77c9e2"]\
+            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=289587"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -3375,7 +3377,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@rollup/pluginutils", "virtual:bdf9c1597b207c04b8dac36858ca5f57d6e3fe0b3841ec6bf7aaf496a9d36ebb4a4d122c9981c629c1871d256035caf2b85fc521b0110d2664b3751857374997#npm:5.0.2"],\
             ["@types/babel__core", null],\
             ["@types/rollup", null],\
-            ["rollup", "npm:3.25.3"]\
+            ["rollup", "npm:3.26.2"]\
           ],\
           "packagePeers": [\
             "@babel/core",\
@@ -3405,7 +3407,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["glob", "npm:8.1.0"],\
             ["is-reference", "npm:1.2.1"],\
             ["magic-string", "npm:0.27.0"],\
-            ["rollup", "npm:3.25.3"]\
+            ["rollup", "npm:3.26.2"]\
           ],\
           "packagePeers": [\
             "@types/rollup",\
@@ -3433,11 +3435,43 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-builtin-module", "npm:3.2.1"],\
             ["is-module", "npm:1.0.0"],\
             ["resolve", "patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"],\
-            ["rollup", "npm:3.25.3"]\
+            ["rollup", "npm:3.26.2"]\
           ],\
           "packagePeers": [\
             "@types/rollup",\
             "rollup"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@rollup/plugin-typescript", [\
+        ["npm:11.1.2", {\
+          "packageLocation": "./.yarn/cache/@rollup-plugin-typescript-npm-11.1.2-2948b9694d-f4655a35e0.zip/node_modules/@rollup/plugin-typescript/",\
+          "packageDependencies": [\
+            ["@rollup/plugin-typescript", "npm:11.1.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:564722a901df1bff0fda97a09f3c474be5a774a194306bf86bfb0451b16f089a7a31c19ba8e507ba7df4eb77823a70b9b53e173bd7ff61b123501e28403f99c3#npm:11.1.2", {\
+          "packageLocation": "./.yarn/__virtual__/@rollup-plugin-typescript-virtual-eeb27c3aef/0/cache/@rollup-plugin-typescript-npm-11.1.2-2948b9694d-f4655a35e0.zip/node_modules/@rollup/plugin-typescript/",\
+          "packageDependencies": [\
+            ["@rollup/plugin-typescript", "virtual:564722a901df1bff0fda97a09f3c474be5a774a194306bf86bfb0451b16f089a7a31c19ba8e507ba7df4eb77823a70b9b53e173bd7ff61b123501e28403f99c3#npm:11.1.2"],\
+            ["@rollup/pluginutils", "virtual:bdf9c1597b207c04b8dac36858ca5f57d6e3fe0b3841ec6bf7aaf496a9d36ebb4a4d122c9981c629c1871d256035caf2b85fc521b0110d2664b3751857374997#npm:5.0.2"],\
+            ["@types/rollup", null],\
+            ["@types/tslib", null],\
+            ["@types/typescript", null],\
+            ["resolve", "patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"],\
+            ["rollup", "npm:3.26.2"],\
+            ["tslib", "npm:2.6.0"],\
+            ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=289587"]\
+          ],\
+          "packagePeers": [\
+            "@types/rollup",\
+            "@types/tslib",\
+            "@types/typescript",\
+            "rollup",\
+            "tslib",\
+            "typescript"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -3458,7 +3492,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/rollup", null],\
             ["estree-walker", "npm:2.0.2"],\
             ["picomatch", "npm:2.3.1"],\
-            ["rollup", "npm:3.25.3"]\
+            ["rollup", "npm:3.26.2"]\
           ],\
           "packagePeers": [\
             "@types/rollup",\
@@ -3658,10 +3692,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:18.2.13", {\
-          "packageLocation": "./.yarn/cache/@types-react-npm-18.2.13-f7110efddb-f7c15f19c1.zip/node_modules/@types/react/",\
+        ["npm:18.2.14", {\
+          "packageLocation": "./.yarn/cache/@types-react-npm-18.2.14-4d72cc1c1d-a6a5e8cc78.zip/node_modules/@types/react/",\
           "packageDependencies": [\
-            ["@types/react", "npm:18.2.13"],\
+            ["@types/react", "npm:18.2.14"],\
             ["@types/prop-types", "npm:15.7.5"],\
             ["@types/scheduler", "npm:0.16.3"],\
             ["csstype", "npm:3.1.2"]\
@@ -7308,13 +7342,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@rollup/plugin-babel", "virtual:564722a901df1bff0fda97a09f3c474be5a774a194306bf86bfb0451b16f089a7a31c19ba8e507ba7df4eb77823a70b9b53e173bd7ff61b123501e28403f99c3#npm:6.0.3"],\
             ["@rollup/plugin-commonjs", "virtual:564722a901df1bff0fda97a09f3c474be5a774a194306bf86bfb0451b16f089a7a31c19ba8e507ba7df4eb77823a70b9b53e173bd7ff61b123501e28403f99c3#npm:25.0.2"],\
             ["@rollup/plugin-node-resolve", "virtual:564722a901df1bff0fda97a09f3c474be5a774a194306bf86bfb0451b16f089a7a31c19ba8e507ba7df4eb77823a70b9b53e173bd7ff61b123501e28403f99c3#npm:15.1.0"],\
+            ["@rollup/plugin-typescript", "virtual:564722a901df1bff0fda97a09f3c474be5a774a194306bf86bfb0451b16f089a7a31c19ba8e507ba7df4eb77823a70b9b53e173bd7ff61b123501e28403f99c3#npm:11.1.2"],\
             ["@rushstack/eslint-patch", "npm:1.3.2"],\
             ["@types/jest", "npm:29.5.2"],\
             ["@types/node", "npm:20.2.6"],\
             ["eslint", "npm:8.42.0"],\
             ["lerna", "npm:7.0.1"],\
             ["prettier", "npm:2.8.8"],\
-            ["rollup", "npm:3.25.3"],\
+            ["rollup", "npm:3.26.2"],\
+            ["tslib", "npm:2.6.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=289587"]\
           ],\
           "linkType": "SOFT"\
@@ -9283,7 +9319,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/react-dom-virtual-cd1aa67022/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
           "packageDependencies": [\
             ["react-dom", "virtual:52ae79f794a97a9c228989373a1cfefce77cbcc94a13c6399f400f4674b2601b8bfd0f83398ac26050a6d5d91cb3aeaec7f11cb5ca9ebcfb38d6914361781b1f#npm:18.2.0"],\
-            ["@types/react", "npm:18.2.13"],\
+            ["@types/react", "npm:18.2.14"],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
             ["scheduler", "npm:0.23.0"]\
@@ -9615,10 +9651,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["rollup", [\
-        ["npm:3.25.3", {\
-          "packageLocation": "./.yarn/cache/rollup-npm-3.25.3-d206868bd9-397965706b.zip/node_modules/rollup/",\
+        ["npm:3.26.2", {\
+          "packageLocation": "./.yarn/cache/rollup-npm-3.26.2-4df0a2c97e-7186beeba0.zip/node_modules/rollup/",\
           "packageDependencies": [\
-            ["rollup", "npm:3.25.3"],\
+            ["rollup", "npm:3.26.2"],\
             ["fsevents", "patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"]\
           ],\
           "linkType": "HARD"\
@@ -10341,6 +10377,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/tslib-npm-2.5.3-7756051e02-88902b309a.zip/node_modules/tslib/",\
           "packageDependencies": [\
             ["tslib", "npm:2.5.3"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.6.0", {\
+          "packageLocation": "./.yarn/cache/tslib-npm-2.6.0-4d336a6824-c01066038f.zip/node_modules/tslib/",\
+          "packageDependencies": [\
+            ["tslib", "npm:2.6.0"]\
           ],\
           "linkType": "HARD"\
         }]\

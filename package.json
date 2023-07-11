@@ -2,7 +2,8 @@
   "name": "jeonbyeongmin-js-utils",
   "license": "MIT",
   "scripts": {
-    "sort": "npx sort-package-json"
+    "sort": "npx sort-package-json",
+    "build:types": "lerna run build:types"
   },
   "workspaces": [
     "packages/*"
@@ -17,13 +18,15 @@
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^25.0.2",
     "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
     "@rushstack/eslint-patch": "^1.3.2",
     "@types/jest": "^29.5.2",
     "@types/node": "^20.2.6",
     "eslint": "^8.42.0",
     "lerna": "^7.0.1",
     "prettier": "^2.8.8",
-    "rollup": "^3.25.3",
+    "rollup": "^3.26.2",
+    "tslib": "^2.6.0",
     "typescript": "4.9.4"
   },
   "packageManager": "yarn@3.5.1",
