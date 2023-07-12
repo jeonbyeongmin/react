@@ -1,14 +1,13 @@
 {
   "name": "jeonbyeongmin-js-utils",
   "license": "MIT",
-  "scripts": {
-    "sort": "npx sort-package-json",
-    "build:types": "npx lerna run build:types",
-    "build": "rollup --config rollup.config.ts --configPlugin typescript && yarn build:types"
-  },
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build": "rollup --config rollup.config.ts --configPlugin typescript && yarn build:types",
+    "build:types": "npx lerna run build:types"
+  },
   "devDependencies": {
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
@@ -27,6 +26,7 @@
     "lerna": "^7.0.1",
     "prettier": "^2.8.8",
     "rollup": "^3.26.2",
+    "sort-package-json": "^2.5.1",
     "tslib": "^2.6.0",
     "typescript": "4.9.4"
   },

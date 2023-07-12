@@ -50,6 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lerna", "npm:7.0.1"],\
             ["prettier", "npm:2.8.8"],\
             ["rollup", "npm:3.26.2"],\
+            ["sort-package-json", "npm:2.5.1"],\
             ["tslib", "npm:2.6.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=289587"]\
           ],\
@@ -5231,6 +5232,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["detect-indent", "npm:5.0.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:7.0.1", {\
+          "packageLocation": "./.yarn/cache/detect-indent-npm-7.0.1-f2bf421cb1-cbf3f0b1c3.zip/node_modules/detect-indent/",\
+          "packageDependencies": [\
+            ["detect-indent", "npm:7.0.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["detect-newline", [\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/detect-newline-npm-4.0.0-dc4e8f9f88-52767347c7.zip/node_modules/detect-newline/",\
+          "packageDependencies": [\
+            ["detect-newline", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["diff-sequences", [\
@@ -5954,6 +5971,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["micromatch", "npm:4.0.5"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:3.3.0", {\
+          "packageLocation": "./.yarn/cache/fast-glob-npm-3.3.0-e5a806a3c2-20df62be28.zip/node_modules/fast-glob/",\
+          "packageDependencies": [\
+            ["fast-glob", "npm:3.3.0"],\
+            ["@nodelib/fs.stat", "npm:2.0.5"],\
+            ["@nodelib/fs.walk", "npm:1.2.8"],\
+            ["glob-parent", "npm:5.1.2"],\
+            ["merge2", "npm:1.4.1"],\
+            ["micromatch", "npm:4.0.5"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["fast-json-stable-stringify", [\
@@ -6295,6 +6324,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["get-stdin", [\
+        ["npm:9.0.0", {\
+          "packageLocation": "./.yarn/cache/get-stdin-npm-9.0.0-4221477153-5972bc34d0.zip/node_modules/get-stdin/",\
+          "packageDependencies": [\
+            ["get-stdin", "npm:9.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["get-stream", [\
         ["npm:6.0.0", {\
           "packageLocation": "./.yarn/cache/get-stream-npm-6.0.0-ca30041dff-587e6a9312.zip/node_modules/get-stream/",\
@@ -6318,6 +6356,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["get-symbol-description", "npm:1.0.0"],\
             ["call-bind", "npm:1.0.2"],\
             ["get-intrinsic", "npm:1.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["git-hooks-list", [\
+        ["npm:3.1.0", {\
+          "packageLocation": "./.yarn/cache/git-hooks-list-npm-3.1.0-d79db164cf-05cbdb29e1.zip/node_modules/git-hooks-list/",\
+          "packageDependencies": [\
+            ["git-hooks-list", "npm:3.1.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -6506,6 +6553,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ignore", "npm:5.2.4"],\
             ["merge2", "npm:1.4.1"],\
             ["slash", "npm:3.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:13.2.2", {\
+          "packageLocation": "./.yarn/cache/globby-npm-13.2.2-47efcd4a86-f3d84ced58.zip/node_modules/globby/",\
+          "packageDependencies": [\
+            ["globby", "npm:13.2.2"],\
+            ["dir-glob", "npm:3.0.1"],\
+            ["fast-glob", "npm:3.3.0"],\
+            ["ignore", "npm:5.2.4"],\
+            ["merge2", "npm:1.4.1"],\
+            ["slash", "npm:4.0.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -7128,6 +7187,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["is-plain-obj", "npm:1.1.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.1.0", {\
+          "packageLocation": "./.yarn/cache/is-plain-obj-npm-4.1.0-a4f2a92b44-6dc45da70d.zip/node_modules/is-plain-obj/",\
+          "packageDependencies": [\
+            ["is-plain-obj", "npm:4.1.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["is-plain-object", [\
@@ -7350,6 +7416,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lerna", "npm:7.0.1"],\
             ["prettier", "npm:2.8.8"],\
             ["rollup", "npm:3.26.2"],\
+            ["sort-package-json", "npm:2.5.1"],\
             ["tslib", "npm:2.6.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=289587"]\
           ],\
@@ -9854,6 +9921,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["slash", "npm:3.0.0"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/slash-npm-4.0.0-ce4bbc4a80-da8e4af737.zip/node_modules/slash/",\
+          "packageDependencies": [\
+            ["slash", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["smart-buffer", [\
@@ -9894,6 +9968,31 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["sort-keys", "npm:2.0.0"],\
             ["is-plain-obj", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["sort-object-keys", [\
+        ["npm:1.1.3", {\
+          "packageLocation": "./.yarn/cache/sort-object-keys-npm-1.1.3-314a377026-abea944d67.zip/node_modules/sort-object-keys/",\
+          "packageDependencies": [\
+            ["sort-object-keys", "npm:1.1.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["sort-package-json", [\
+        ["npm:2.5.1", {\
+          "packageLocation": "./.yarn/cache/sort-package-json-npm-2.5.1-3bd1a6b561-69ec7a6275.zip/node_modules/sort-package-json/",\
+          "packageDependencies": [\
+            ["sort-package-json", "npm:2.5.1"],\
+            ["detect-indent", "npm:7.0.1"],\
+            ["detect-newline", "npm:4.0.0"],\
+            ["get-stdin", "npm:9.0.0"],\
+            ["git-hooks-list", "npm:3.1.0"],\
+            ["globby", "npm:13.2.2"],\
+            ["is-plain-obj", "npm:4.1.0"],\
+            ["sort-object-keys", "npm:1.1.3"]\
           ],\
           "linkType": "HARD"\
         }]\
