@@ -3,7 +3,8 @@
   "license": "MIT",
   "scripts": {
     "sort": "npx sort-package-json",
-    "build:types": "lerna run build:types"
+    "build:types": "npx lerna run build:types",
+    "build": "rollup --config rollup.config.ts --configPlugin typescript && yarn build:types"
   },
   "workspaces": [
     "packages/*"

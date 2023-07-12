@@ -6,7 +6,8 @@
     "outDir": "./build/lib",
     "tsBuildInfoFile": "./build/.tsbuildinfo"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["src/**/__tests__"]
   // references used to be here
   // "references": [
   //   {

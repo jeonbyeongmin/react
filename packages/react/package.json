@@ -1,6 +1,6 @@
 {
   "name": "@jeonbyeongmin/react",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "sideEffects": false,
   "packageManager": "yarn@3.5.1",
   "devDependencies": {
@@ -13,5 +13,13 @@
   "scripts": {
     "test:types": "tsc",
     "build:types": "tsc"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/lib/index.mjs",
+      "require": "./build/lib/index.js",
+      "types": "./build/lib/index.d.ts"
+    },
+    "./package.json": "./package.json"
   }
 }
