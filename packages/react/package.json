@@ -1,6 +1,6 @@
 {
   "name": "@jeonbyeongmin/react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "sideEffects": false,
   "packageManager": "yarn@3.5.1",
   "devDependencies": {
