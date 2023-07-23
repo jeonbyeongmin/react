@@ -6,7 +6,8 @@
   ],
   "scripts": {
     "build": "rollup --config rollup.config.ts --configPlugin typescript && yarn build:types",
-    "build:types": "npx lerna run build:types"
+    "build:types": "npx lerna run build:types",
+    "publish": "npx lerna publish --conventional-commits --yes"
   },
   "devDependencies": {
     "@babel/core": "^7.22.5",

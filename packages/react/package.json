@@ -24,5 +24,12 @@
       "require": "./build/lib/index.js"
     },
     "./package.json": "./package.json"
+  },
+  "files": [
+    "build"
+  ],
+  "gitHead": "f1218a5729dbf9b8990aaf8954a965077a89dc82",
+  "publishConfig": {
+    "access": "public"
   }
 }
